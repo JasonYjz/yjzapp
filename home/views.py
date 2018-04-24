@@ -8,4 +8,7 @@ from django.http import HttpResponse
  
  
 def index(request):
-    return HttpResponse(u"欢迎光临 自强学堂!")
+    #return HttpResponse(u"welcome!")
+    context = {}
+    context['name'] = 'Jason'
+    return render(request, 'simple.html', context)
