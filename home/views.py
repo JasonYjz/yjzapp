@@ -11,4 +11,4 @@ def index(request):
     #return HttpResponse(u"welcome!")
     context = {}
     context['name'] = 'Jason'
-    return render(request, 'simple.html', context)
+    return render(request, 'index.html', context)
